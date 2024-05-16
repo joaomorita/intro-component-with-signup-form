@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.left{
+    width: 50%;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.left h1{
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 400px;
+    line-height: 40px;
+    padding: 16px 0;
+}
+
+.left p{
+    width: 500px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.right > p{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.right > p strong{
+    font-weight: bold;
+}
+
+.right form{
+    background-color: #fff;
+    padding: 32px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.right form input{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.right form input:focus{
+    outline-color: hsl(248, 32%, 49%);
+}
+
+.right button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right form p{
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.right form p a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+.right form p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+    
+    .container{
+        display: block;
+    }
+
+    .left h1{
+        text-align: center; 
+    }
+
+    .left p{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+
+    .container{
+        display: block;
+        width: 90vw;
+    }
+
+    .left h1{
+        font-weight: bold;
+        font-size: 2.5em;
+        width: 90vw;
+        line-height: 40px;
+        padding: 16px 0;
+        text-align: center;
+    }
+    
+    .left p{
+        width: 90vw;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .right p{
+        width: 90vw;
+    }
+
+    .right form{
+        width: 90vw;
+
+    }
+
+    .right form p{
+        font-size: 8px;
+        text-align: center;
+        width: 100%;
+        color: hsl(246, 25%, 77%);
+    }
+
+}
